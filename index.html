@@ -4,6 +4,15 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col col-12 col-t-12">
+
+             <!-- Table of Contents -->
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
             <div class="row">
                 {% for post in paginator.posts %}
                     {% include post-card.html %}
