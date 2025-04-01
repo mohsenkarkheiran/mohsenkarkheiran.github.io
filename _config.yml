@@ -24,7 +24,6 @@ avatar_image: /img/profile_picture.jpg
 # Contact links
 linkedln: "https://www.linkedin.com/in/mohsen-karkheiran-a95690a8/" # Add your linkedln handle
 github: "https://github.com/mohsenkarkheiran"  # Add your github handle
-streamlit: "https://share.streamlit.io/user/mohsenkarkheiran"
 
 paginate: 6
 paginate_path: "/page/:num"
