@@ -1,0 +1,54 @@
+# Remote theme directory
+remote_theme: analytics-link/analytics-link.github.io
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+#-------------------------------
+# General Site Settings
+title: Mohsen Karkheiran
+description: "Hi I'm Mohsen, and I'm a Mathematical Physicist.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on machine learning and AI. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+#-------------------------------
+# About Section
+subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
+location: "Waterloo, Ontario, CA"
+resume_url: /docs/CV-AI.pdf
+avatar_image: /img/profile_picture.jpg
+
+#-------------------------------
+# Contact links
+linkedln: "https://www.linkedin.com/in/mohsen-karkheiran-a95690a8/" # Add your linkedln handle
+github: "https://github.com/mohsenkarkheiran"  # Add your github handle
+streamlit: "https://share.streamlit.io/user/mohsenkarkheiran"
+
+paginate: 6
+paginate_path: "/page/:num"
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      read_time: true
+      share: false
+
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
