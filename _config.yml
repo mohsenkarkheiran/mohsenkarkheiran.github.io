@@ -13,7 +13,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # About Section
-subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
+subtitle: Mohsen's <span style="color:#f58506"> Portfolio </span>
 location: "Waterloo, Ontario, CA"
 resume_url: /docs/CV-AI.pdf
 avatar_image: /img/profile_picture.JPG
@@ -30,14 +30,25 @@ sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
 
+
 defaults:
   - scope:
+      path: ""
       type: posts
     values:
       layout: post
+  - scope:
+      path: "ML-DS"
+      type: pages
+    values:
+      category: ML-DS
       read_time: true
-      share: false
-
+  - scope:
+      path: "DL"
+      type: pages
+    values:
+      category: DL
+      read_time: true
 
 #-------------------------------
 # Exclude from processing.
