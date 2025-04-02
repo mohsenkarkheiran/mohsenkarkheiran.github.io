@@ -4,11 +4,11 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col col-12 col-t-12">
-            <<!-- Add Tab Navigation -->
+            <!-- Add Tab Navigation -->
             <div class="tabs" style="margin-bottom: 30px;">
                 <button class="tab-button active" onclick="filterPosts('all')">All Posts</button>
-                <button class="tab-button" onclick="filterPosts('ML-DS')">ML-DS</button>
-                <button class="tab-button" onclick="filterPosts('DL')">DL</button>
+                <button class="tab-button" onclick="filterPosts('tab1')">Tab1</button>
+                <button class="tab-button" onclick="filterPosts('tab2')">Tab2</button>
             </div>
 
             <!-- Posts Grid (Modified for Tabs) -->
@@ -19,18 +19,18 @@ layout: default
             </div>
 
             <!-- Hidden Tab1 Posts -->
-            <div class="row" id="ML-DS-posts" style="display: none;">
+            <div class="row" id="tab1-posts" style="display: none;">
                 {% for post in site.posts %}
-                    {% if post.categories contains 'ML-DS' %}
+                    {% if post.categories contains 'tab1' %}
                         {% include post-card.html %}
                     {% endif %}
                 {% endfor %}
             </div>
 
             <!-- Hidden Tab2 Posts -->
-            <div class="row" id="DL-posts" style="display: none;">
+            <div class="row" id="tab2-posts" style="display: none;">
                 {% for post in site.posts %}
-                    {% if post.categories contains 'DL' %}
+                    {% if post.categories contains 'tab2' %}
                         {% include post-card.html %}
                     {% endif %}
                 {% endfor %}
@@ -40,3 +40,42 @@ layout: default
         </div>
     </div>
 </div>
+
+<script>
+    function filterPosts(tab) {
+        // Hide all post containers
+        document.getElementById('all-posts').style.display = 'none';
+        document.getElementById('tab1-posts').style.display = 'none';
+        document.getElementById('tab2-posts').style.display = 'none';
+
+        // Show selected tab
+        document.getElementById(tab + '-posts').style.display = 'flex';
+
+        // Update active tab button
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.classList.remove('active');
+        });
+        event.currentTarget.classList.add('active');
+
+        // Note: Pagination will need separate handling if you want it per-tab
+    }
+</script>
+
+<style>
+    .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .tab-button {
+        padding: 8px 16px;
+        background: #f0f0f0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .tab-button.active {
+        background: #333;
+        color: white;
+    }
+</style>
