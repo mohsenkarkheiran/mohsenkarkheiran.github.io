@@ -2,7 +2,7 @@
 layout: post
 title: Hurricane Path Finder
 image: "/posts/Hurricane-Track.png"
-tags: [Deep Learning, Machine Learning, Data Science, Python]
+tags: [Deep Learning, LSTM, ANN, Machine Learning, Data Science, Python]
 ---
 
 
