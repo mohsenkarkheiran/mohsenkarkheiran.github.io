@@ -3,7 +3,6 @@ layout: post
 title: Enhancing Targeting Accuracy Using ML
 image: "/posts/classification-title-img.png"
 tags: [Customer Targeting, Machine Learning, Classification, Python]
-categories: ML-DS
 ---
 
 Our client, a grocery retailer, wants to utilise Machine Learning to reduce mailing costs, and improve ROI!
