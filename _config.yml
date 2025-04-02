@@ -1,5 +1,3 @@
-# Remote theme directory
-remote_theme: analytics-link/analytics-link.github.io
 
 plugins:
   - jekyll-paginate
@@ -9,21 +7,21 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Johnny Hopkins
-description: "Hi I'm Johnny, and I'm a Data Scientist.  My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+description: "Hi I'm Mohsen, and I'm a Mathematical Physicist.  My portfolio focuses on interesting projects in Data Science/Deep Learning I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # About Section
-subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
-location: "London, UK"
-resume_url: /docs/resume.docx
+subtitle: Mohsen's <span style="color:#f58506"> Portfolio </span>
+location: "Waterloo, Ontario, CA"
+resume_url: /docs/CV-AI.pdf
 avatar_image: /img/profile_picture.JPG
 
 #-------------------------------
 # Contact links
-linkedln: "https://linkedln.com/#" # Add your linkedln handle
-github: "https://github.com/#"  # Add your github handle
+linkedln: "https://www.linkedin.com/in/mohsen-karkheiran-a95690a8/" # Add your linkedln handle
+github: "https://github.com/mohsenkarkheiran"  # Add your github handle
 
 paginate: 6
 paginate_path: "/page/:num"
