@@ -7,14 +7,14 @@ plugins:
 
 #-------------------------------
 # General Site Settings
-title: Johnny Hopkins
+title: Mohsen Karkheiran
 description: "Hi I'm Mohsen, and I'm a Mathematical Physicist.  My portfolio focuses on interesting projects in Data Science/Deep Learning I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 #-------------------------------
 # About Section
-subtitle: Mohsen's <span style="color:#f58506"> Portfolio </span>
+subtitle: Mohsen's <span style="color:Tomato"> Portfolio </span>
 location: "Waterloo, Ontario, CA"
 resume_url: /docs/CV-AI.pdf
 avatar_image: /img/profile_picture.JPG
