@@ -13,7 +13,7 @@ layout: default
 
             <!-- Posts Grid (Modified for Tabs) -->
             <div class="row" id="all-posts">
-                {% for post in paginator.posts %}
+                {% for post in site.posts %}
                     {% include post-card.html %}
                 {% endfor %}
             </div>
@@ -36,7 +36,7 @@ layout: default
                 {% endfor %}
             </div>
 
-            {% include pagination.html %}
+           
         </div>
     </div>
 </div>
