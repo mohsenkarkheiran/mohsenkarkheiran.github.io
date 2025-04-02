@@ -4,78 +4,12 @@ layout: default
 <div class="container">
     <div class="row">
         <div class="col col-12 col-t-12">
-            <!-- Add Tab Navigation -->
-            <div class="tabs" style="margin-bottom: 30px;">
-                <button class="tab-button active" onclick="filterPosts('all')">All Posts</button>
-                <button class="tab-button" onclick="filterPosts('ML-DS')">ML-DS</button>
-                <button class="tab-button" onclick="filterPosts('DL')">DL</button>
-            </div>
-
-            <!-- Posts Grid (Modified for Tabs) -->
-            <div class="row" id="all-posts">
-                {% for post in site.posts %}
+            <div class="row">
+                {% for post in paginator.posts %}
                     {% include post-card.html %}
                 {% endfor %}
             </div>
-
-            <!-- Hidden Tab1 Posts -->
-            <div class="row" id="ML-DS-posts" style="display: none;">
-                {% for post in site.posts %}
-                    {% if post.categories contains 'ML-DS' %}
-                        {% include post-card.html %}
-                    {% endif %}
-                {% endfor %}
-            </div>
-
-            <!-- Hidden Tab2 Posts -->
-            <div class="row" id="DL-posts" style="display: none;">
-                {% for post in site.posts %}
-                    {% if post.categories contains 'DL' %}
-                        {% include post-card.html %}
-                    {% endif %}
-                {% endfor %}
-            </div>
-
-           
+            {% include pagination.html %}
         </div>
     </div>
 </div>
-
-<script>
-    function filterPosts(tab) {
-        // Hide all post containers
-        document.getElementById('all-posts').style.display = 'none';
-        document.getElementById('ML-DS-posts').style.display = 'none';
-        document.getElementById('DL-posts').style.display = 'none';
-
-        // Show selected tab
-        document.getElementById(tab + '-posts').style.display = 'flex';
-
-        // Update active tab button
-        document.querySelectorAll('.tab-button').forEach(button => {
-            button.classList.remove('active');
-        });
-        event.currentTarget.classList.add('active');
-
-        // Note: Pagination will need separate handling if you want it per-tab
-    }
-</script>
-
-<style>
-    .tabs {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
-    .tab-button {
-        padding: 8px 16px;
-        background: #f0f0f0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .tab-button.active {
-        background: #333;
-        color: white;
-    }
-</style>
