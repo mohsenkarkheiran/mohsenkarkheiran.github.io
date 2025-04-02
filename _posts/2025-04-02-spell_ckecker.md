@@ -1,3 +1,10 @@
+---
+layout: post
+title: Spell Checker
+image: "/posts/nltk_spellchecker.png"
+tags: [NLTK, Python]
+---
+
 We write a short and simple code for spell checking. For a given word, we simply check the distance between it and the words in NLTK corpus. Either Jaccard or Edit distance can be used to measure the distances.
 
 
