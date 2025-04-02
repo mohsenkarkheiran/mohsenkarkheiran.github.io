@@ -1,3 +1,11 @@
+---
+layout: post
+title: Quantum Adder
+image: "/posts/quantum_adder_qft.png"
+tags: [Quantum Simulation, Python]
+---
+
+
 # Introduction: 
 
 One of the main challenges in quantum computing is the noise in current devices. In this task, you will create a simple noise generator and assess its effect. You can use any framework you like (Qiskit, Cirq, etc..)
