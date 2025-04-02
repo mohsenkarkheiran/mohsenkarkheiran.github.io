@@ -1,3 +1,11 @@
+---
+layout: post
+title: Hurricane Path Finder
+image: "/posts/Hurricane-Track.png"
+tags: [Deep Learning, Machine Learning, Data Science, Python]
+---
+
+
 # Data Preparation
 
 
@@ -2831,7 +2839,7 @@ plt.show()
 
 
     
-![png](output_24_0.png)
+![png](Hur_output_24_0.png)
     
 
 
@@ -2848,7 +2856,7 @@ plt.show()
 
 
     
-![png](output_25_0.png)
+![png](Hur_output_25_0.png)
     
 
 
@@ -2868,7 +2876,7 @@ plt.show()
 
 
     
-![png](output_26_1.png)
+![png](Hur_output_26_1.png)
     
 
 
@@ -3918,7 +3926,7 @@ plt.show()
 
 
     
-![png](output_32_0.png)
+![png](Hur_output_32_0.png)
     
 
 
@@ -4639,7 +4647,7 @@ plt.show()
 
 
     
-![png](output_37_0.png)
+![png](Hur_output_37_0.png)
     
 
 
@@ -6416,7 +6424,7 @@ plt.show()
 
 
     
-![png](output_52_0.png)
+![png](Hur_output_52_0.png)
     
 
 
@@ -6513,7 +6521,7 @@ plt.legend()
 
 
     
-![png](output_57_1.png)
+![png](Hur_output_57_1.png)
     
 
 
@@ -6536,7 +6544,7 @@ plt.legend()
 
 
     
-![png](output_58_1.png)
+![png](Hur_output_58_1.png)
     
 
 
@@ -6560,7 +6568,7 @@ plt.legend()
 
 
     
-![png](output_59_1.png)
+![png](Hur_output_59_1.png)
     
 
 
