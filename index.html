@@ -7,8 +7,8 @@ layout: default
             <!-- Add Tab Navigation -->
             <div class="tabs" style="margin-bottom: 30px;">
                 <button class="tab-button active" onclick="filterPosts('all')">All Posts</button>
-                <button class="tab-button" onclick="filterPosts('tab1')">Tab1</button>
-                <button class="tab-button" onclick="filterPosts('tab2')">Tab2</button>
+                <button class="tab-button" onclick="filterPosts('ML-DS')">ML-DS</button>
+                <button class="tab-button" onclick="filterPosts('DL')">DL</button>
             </div>
 
             <!-- Posts Grid (Modified for Tabs) -->
@@ -19,18 +19,18 @@ layout: default
             </div>
 
             <!-- Hidden Tab1 Posts -->
-            <div class="row" id="tab1-posts" style="display: none;">
+            <div class="row" id="ML-DS-posts" style="display: none;">
                 {% for post in site.posts %}
-                    {% if post.categories contains 'tab1' %}
+                    {% if post.categories contains 'ML-DS' %}
                         {% include post-card.html %}
                     {% endif %}
                 {% endfor %}
             </div>
 
             <!-- Hidden Tab2 Posts -->
-            <div class="row" id="tab2-posts" style="display: none;">
+            <div class="row" id="DL-posts" style="display: none;">
                 {% for post in site.posts %}
-                    {% if post.categories contains 'tab2' %}
+                    {% if post.categories contains 'DL' %}
                         {% include post-card.html %}
                     {% endif %}
                 {% endfor %}
@@ -45,8 +45,8 @@ layout: default
     function filterPosts(tab) {
         // Hide all post containers
         document.getElementById('all-posts').style.display = 'none';
-        document.getElementById('tab1-posts').style.display = 'none';
-        document.getElementById('tab2-posts').style.display = 'none';
+        document.getElementById('ML-DS-posts').style.display = 'none';
+        document.getElementById('DL-posts').style.display = 'none';
 
         // Show selected tab
         document.getElementById(tab + '-posts').style.display = 'flex';
