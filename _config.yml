@@ -23,9 +23,6 @@ avatar_image: /img/profile_picture.JPG
 linkedln: "https://www.linkedin.com/in/mohsen-karkheiran-a95690a8/" # Add your linkedln handle
 github: "https://github.com/mohsenkarkheiran"  # Add your github handle
 
-paginate: 6
-paginate_path: "/page/:num"
-
 sass:
   sass_dir: _sass
   style: compressed # possible values: nested expanded compact compressed
