@@ -1,3 +1,12 @@
+---
+layout: post
+title: Timeseries Forecsting and Option Pricing 
+image: "/posts/stock_models_with_options.png"
+tags: [Deep Learning,PINNs,RNN, Q-Learning, ARIMA, Garch, Python]
+---
+
+
+
 # European Options Pricing and Risk Management Using AI-Driven Models and Traditional Numerical Methods
 
 ## 0. Resources
