@@ -1,3 +1,10 @@
+---
+layout: post
+title: Solving Differential Equations with PINNs
+image: "/posts/pinns_visualization.png"
+tags: [Deep Learning,PINNs, DeepXDE, Python]
+---
+
 # Table of Contents
 - [ 1 - Introduction](#1)
 - [ 2 - Solve Differential Equations with PINNs](#2)
