@@ -2839,7 +2839,7 @@ plt.show()
 
 
     
-![png](Hur_output_24_0.png)
+![png](/img/posts/Hur_output_24_0.png)
     
 
 
@@ -2856,7 +2856,7 @@ plt.show()
 
 
     
-![png](Hur_output_25_0.png)
+![png](/img/posts/Hur_output_25_0.png)
     
 
 
@@ -2876,7 +2876,7 @@ plt.show()
 
 
     
-![png](Hur_output_26_1.png)
+![png](/img/posts/Hur_output_26_1.png)
     
 
 
@@ -3926,13 +3926,13 @@ plt.show()
 
 
     
-![png](Hur_output_32_0.png)
+![png](/img/posts/Hur_output_32_0.png)
     
 
 
 ### Model Attempt 2 - FIX IT
 
-To improve the performance of the neural network, we add more features corresponding to the sequence of positoins of the hurricane. Basically, it means if one measures n postions,then we ask whether NN can predict (n+1)th hurricane positons or not.
+To improve the performance of the neural network, we add more features corresponding to the sequence of positoins of the /img/posts/Hurricane. Basically, it means if one measures n postions,then we ask whether NN can predict (n+1)th hurricane positons or not.
 
 Since the the time-difference between the measurements are not always 6 hours, the new features are added, are average velocity. So one can multiply these average velocities with the time difference, to find the position in principle.
 
@@ -4647,7 +4647,7 @@ plt.show()
 
 
     
-![png](Hur_output_37_0.png)
+![png](/img/posts/Hur_output_37_0.png)
     
 
 
@@ -6424,7 +6424,7 @@ plt.show()
 
 
     
-![png](Hur_output_52_0.png)
+![png](/img/posts/Hur_output_52_0.png)
     
 
 
@@ -6521,7 +6521,7 @@ plt.legend()
 
 
     
-![png](Hur_output_57_1.png)
+![png](/img/posts/Hur_output_57_1.png)
     
 
 
@@ -6544,7 +6544,7 @@ plt.legend()
 
 
     
-![png](Hur_output_58_1.png)
+![png](/img/posts/Hur_output_58_1.png)
     
 
 
@@ -6568,7 +6568,7 @@ plt.legend()
 
 
     
-![png](Hur_output_59_1.png)
+![png](/img/posts/Hur_output_59_1.png)
     
 
 
