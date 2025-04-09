@@ -16,7 +16,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # About Section
 subtitle: Mohsen's <span style="color:Tomato"> Portfolio </span>
 location: "Waterloo, Ontario, CA"
-resume_url: /docs/CV-AI.pdf
+resume_url: /docs/CV_AI.pdf
 avatar_image: /img/profile_picture.JPG
 
 #-------------------------------
