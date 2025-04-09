@@ -251,7 +251,7 @@ plt.show()
 
 
     
-![png](pinn_output_9_1.png)
+![png](/img/posts/pinn_output_9_1.png)
     
 
 
@@ -456,7 +456,7 @@ plt.show()
 
 
     
-![png](pinn_output_15_0.png)
+![png](/img/posts/pinn_output_15_0.png)
     
 
 
@@ -664,7 +664,7 @@ plt.show()
 
 
     
-![png](pinn_output_21_0.png)
+![png](/img/posts/pinn_output_21_0.png)
     
 
 
@@ -812,7 +812,7 @@ plt.show()
 
 
     
-![png](pinn_output_26_0.png)
+![png](/img/posts/pinn_output_26_0.png)
     
 
 
@@ -940,7 +940,7 @@ plt.show()
 
 
     
-![png](pinn_output_30_0.png)
+![png](/img/posts/pinn_output_30_0.png)
     
 
 
@@ -1104,7 +1104,7 @@ plt.show()
 
 
     
-![png](pinn_output_35_0.png)
+![png](/img/posts/pinn_output_35_0.png)
     
 
 
@@ -1265,7 +1265,7 @@ plt.show()
 
 
     
-![png](pinn_output_39_0.png)
+![png](/img/posts/pinn_output_39_0.png)
     
 
 
@@ -1413,7 +1413,7 @@ plt.show()
 
 
     
-![png](pinn_output_47_0.png)
+![png](/img/posts/pinn_output_47_0.png)
     
 
 
@@ -1574,7 +1574,7 @@ plt.show()
 
 
     
-![png](pinn_output_53_0.png)
+![png](/img/posts/pinn_output_53_0.png)
     
 
 
@@ -1871,7 +1871,7 @@ plt.show()
 
 
     
-![png](pinn_output_59_0.png)
+![png](/img/posts/pinn_output_59_0.png)
     
 
 
@@ -2044,7 +2044,7 @@ plt.show()
 
 
     
-![png](pinn_output_65_1.png)
+![png](/img/posts/pinn_output_65_1.png)
     
 
 
@@ -2256,7 +2256,7 @@ plt.show()
 
 
     
-![png](pinn_output_71_0.png)
+![png](/img/posts/pinn_output_71_0.png)
     
 
 
@@ -2429,7 +2429,7 @@ plt.show()
 
 
     
-![png](pinn_output_77_0.png)
+![png](/img/posts/pinn_output_77_0.png)
     
 
 
@@ -2821,7 +2821,7 @@ plt.legend()
 
 
     
-![png](pinn_output_83_2.png)
+![png](/img/posts/pinn_output_83_2.png)
     
 
 
@@ -3012,7 +3012,7 @@ plt.show()
 
 
     
-![png](pinn_output_90_0.png)
+![png](/img/posts/pinn_output_90_0.png)
     
 
 
@@ -3363,7 +3363,7 @@ plt.legend()
 
 
     
-![png](pinn_output_97_1.png)
+![png](/img/posts/pinn_output_97_1.png)
     
 
 
@@ -3878,7 +3878,7 @@ plt.show()
 
 
     
-![png](pinn_output_107_0.png)
+![png](/img/posts/pinn_output_107_0.png)
     
 
 
@@ -3901,7 +3901,7 @@ plt.show()
 
 
     
-![png](pinn_output_108_0.png)
+![png](/img/posts/pinn_output_108_0.png)
     
 
 
