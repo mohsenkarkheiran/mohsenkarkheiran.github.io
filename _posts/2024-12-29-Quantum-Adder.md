@@ -137,7 +137,7 @@ print(qml.draw_mpl(circuit)(x, y))
 
 
     
-![all text](img/posts/qadd_output_7_1.png)
+![all text](/img/posts/qadd_output_7_1.png)
     
 
 
@@ -163,7 +163,7 @@ fig.show()
 
 
     
-![all text](img/posts/qadd_output_8_1.png)
+![all text](/img/posts/qadd_output_8_1.png)
     
 
 
@@ -861,7 +861,7 @@ plt.show()
 
 
     
-![all text](img/posts/qadd_output_25_0.png)
+![all text](/img/posts/qadd_output_25_0.png)
     
 
 
@@ -929,7 +929,7 @@ plt.show()
 
 
     
-![all text](img/posts/qadd_output_30_0.png)
+![all text](/img/posts/qadd_output_30_0.png)
     
 
 
