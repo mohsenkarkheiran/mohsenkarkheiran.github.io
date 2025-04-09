@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Solving Differential Equations with PINNs
