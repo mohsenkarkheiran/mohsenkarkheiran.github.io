@@ -1,3 +1,10 @@
+---
+layout: post
+title: Solving Differential Equations with PINNs
+image: "/posts/pinns_visualization.png"
+tags: [Deep Learning,PINNs, DeepXDE, Python]
+---
+
 # Table of Contents
 - [ 1 - Introduction](#1)
 - [ 2 - Solve Differential Equations with PINNs](#2)
@@ -244,7 +251,7 @@ plt.show()
 
 
     
-![png](output_9_1.png)
+![png](pinn_output_9_1.png)
     
 
 
@@ -449,7 +456,7 @@ plt.show()
 
 
     
-![png](output_15_0.png)
+![png](pinn_output_15_0.png)
     
 
 
@@ -657,7 +664,7 @@ plt.show()
 
 
     
-![png](output_21_0.png)
+![png](pinn_output_21_0.png)
     
 
 
@@ -805,7 +812,7 @@ plt.show()
 
 
     
-![png](output_26_0.png)
+![png](pinn_output_26_0.png)
     
 
 
@@ -933,7 +940,7 @@ plt.show()
 
 
     
-![png](output_30_0.png)
+![png](pinn_output_30_0.png)
     
 
 
@@ -1097,7 +1104,7 @@ plt.show()
 
 
     
-![png](output_35_0.png)
+![png](pinn_output_35_0.png)
     
 
 
@@ -1258,7 +1265,7 @@ plt.show()
 
 
     
-![png](output_39_0.png)
+![png](pinn_output_39_0.png)
     
 
 
@@ -1406,7 +1413,7 @@ plt.show()
 
 
     
-![png](output_47_0.png)
+![png](pinn_output_47_0.png)
     
 
 
@@ -1567,7 +1574,7 @@ plt.show()
 
 
     
-![png](output_53_0.png)
+![png](pinn_output_53_0.png)
     
 
 
@@ -1864,7 +1871,7 @@ plt.show()
 
 
     
-![png](output_59_0.png)
+![png](pinn_output_59_0.png)
     
 
 
@@ -2037,7 +2044,7 @@ plt.show()
 
 
     
-![png](output_65_1.png)
+![png](pinn_output_65_1.png)
     
 
 
@@ -2249,7 +2256,7 @@ plt.show()
 
 
     
-![png](output_71_0.png)
+![png](pinn_output_71_0.png)
     
 
 
@@ -2422,7 +2429,7 @@ plt.show()
 
 
     
-![png](output_77_0.png)
+![png](pinn_output_77_0.png)
     
 
 
@@ -2814,7 +2821,7 @@ plt.legend()
 
 
     
-![png](output_83_2.png)
+![png](pinn_output_83_2.png)
     
 
 
@@ -3005,7 +3012,7 @@ plt.show()
 
 
     
-![png](output_90_0.png)
+![png](pinn_output_90_0.png)
     
 
 
@@ -3356,7 +3363,7 @@ plt.legend()
 
 
     
-![png](output_97_1.png)
+![png](pinn_output_97_1.png)
     
 
 
@@ -3871,7 +3878,7 @@ plt.show()
 
 
     
-![png](output_107_0.png)
+![png](pinn_output_107_0.png)
     
 
 
@@ -3894,7 +3901,7 @@ plt.show()
 
 
     
-![png](output_108_0.png)
+![png](pinn_output_108_0.png)
     
 
 
