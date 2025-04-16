@@ -48,7 +48,7 @@ PINNs stand for Physics Informed Neural Networks, and it is used to solve system
 
 
 * Circles: Initial/Boundary conditions; Stars: equations; Squares: Data (if available)
-* Suppose the equation is given by $$\mathcal{N}(u) =0$$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
+* Suppose the equation is given by $$\mathcal{N}(u) =0$$  where $$\mathcal{N}(u)$$ defines the equation, for example, for Burgers equation
   
 $$
 \mathcal{N}(u) = u_t + u u_x - \nu u_{xx} =0
@@ -88,7 +88,7 @@ L[\mathbf{w}]  &=&
 \end{eqnarray}
 $$
 
-* Find the weights $\mathbf{w}$ minimizing $L$:  $\mathbf{w} = {\rm arg min} L[\mathbf{w}]$  
+* Find the weights $$\mathbf{w}$$ minimizing $$L$$:  $$\mathbf{w} = {\rm arg min} L[\mathbf{w}]$$  
 * If the loss function defined above converges to small number close to zero, one can claim that the function that is defined by the neural network is indeed the solution of the differential equaiton that satisfies the given boundary/initial conditions. This is guaranteed by the Cauchy-Kovalevskaya theorem:
 
 
@@ -141,14 +141,14 @@ from functools import partial
 
 ### A simple ODE:
 
-Consider the equation $\frac{dy}{dx} = \cos(\omega x), \quad x\in [-\pi , \pi],$
-with $y(0)=0$.
+Consider the equation $$\frac{dy}{dx} = \cos(\omega x), \quad x\in [-\pi , \pi],$$
+with $$y(0)=0$$.
 
-The exact solution is $y(x)=\frac{1}{\omega}\sin(\omega x)$.
+The exact solution is $$y(x)=\frac{1}{\omega}\sin(\omega x)$$.
 
 
-*   Give the approximation to the solution using a PINN for $\omega =2$.
-*   Repeat the experiment with $\omega =10$.
+*   Give the approximation to the solution using a PINN for $$\omega =2$$.
+*   Repeat the experiment with $$\omega =10$$.
 
 
 
@@ -271,7 +271,7 @@ The plots above shows a very close agreement between the exact solutions and PIN
 ### Heat equation
 
 
-Consider the heat equation $w_t - aw_{xx}=0,\qquad (x,t)\in (0,1)\times (0,1),$
+Consider the heat equation $$w_t - aw_{xx}=0,\qquad (x,t)\in (0,1)\times (0,1),$$
 with initial condition
 
 $$ w(x,0) = x^2+1,$$
@@ -285,8 +285,8 @@ The exact solution is
 $$w(x,t)=x^2 +2at+1.$$
 
 
-*   We give the approximation to the solution using a PINN for $a =1$,
-*   and repeat the experiment with $a =0.01, 10$.
+*   We give the approximation to the solution using a PINN for $$a =1$$,
+*   and repeat the experiment with $$a =0.01, 10$$.
 
 
 
@@ -471,7 +471,7 @@ plt.show()
     
 
 
-Overall it seems the PINNs solution is pretty close to the actual solution. However, the value of the test/train loss for $a=10$ is 4 orders higher than the corresponding numbers for $a=1, 0.1$. This is also clear from the graphs that the final case ($a=10$) is not as precise as the others.
+Overall it seems the PINNs solution is pretty close to the actual solution. However, the value of the test/train loss for $$a=10$$ is 4 orders higher than the corresponding numbers for $$a=1, 0.1$$. This is also clear from the graphs that the final case ($a=10$) is not as precise as the others.
 
 ### A system of linear PDEs
 
@@ -679,7 +679,7 @@ plt.show()
     
 
 
-Again the PINNS solution for both components (v,w) is very close to the actual solution. Specially the train/test loss is of order $10^{-4}$. We study the accuracy more precisely bellow:
+Again the PINNS solution for both components (v,w) is very close to the actual solution. Specially the train/test loss is of order $$10^{-4}$$. We study the accuracy more precisely bellow:
 
 ### Helmholtz equation
 
@@ -695,7 +695,7 @@ We want to find the following solution using a neural network
 
 $$ E^*(x,y) = \cos\frac{\pi\left(x- y\right)}{2}+ \sin\frac{\pi\left(x + y\right)}{2}.$$
 
-There are many other solutions to the Dirichlet problem above, for example $(x,y)\mapsto \sin\left(\frac{\pi}{2} x\right)\sin\left(\frac{\pi}{2} y\right)$ is a solution. So to learn $E^*$ we need to provide the neural network with additional training points. We'll provide you with a function that generates training points from the true solution.
+There are many other solutions to the Dirichlet problem above, for example $$(x,y)\mapsto \sin\left(\frac{\pi}{2} x\right)\sin\left(\frac{\pi}{2} y\right)$$ is a solution. So to learn $$E^*$$ we need to provide the neural network with additional training points. We'll provide you with a function that generates training points from the true solution.
 
 
 ```python
@@ -961,7 +961,7 @@ It seems PINNS solution is very close to the exact solution.
 
 #### Case 1
 
-Let $a \in \mathbb{R}$ and $b>0$. Give an approximation to the solution of the equation 
+Let $$a \in \mathbb{R}$$ and $$b>0$$. Give an approximation to the solution of the equation 
 
 $$\left(\partial_t^2 - a^2 \nabla^2 + b\right)\psi(x,t)=0, \quad (x,t) \in [1, 5]\times [0,T], $$
 
@@ -1123,7 +1123,7 @@ So it seems the PINNS solutions if pretty close to the actual solution.
 
 #### Case 2
 
-Let $a \in \mathbb{R}$ and $b>0$. Give an approximation to the solution of the equation 
+Let $$a \in \mathbb{R}$$ and $$b>0$$. Give an approximation to the solution of the equation 
 
 $$\left(\partial_t^2 - a^2 \nabla^2 + b\right)\psi(x,t)=0, \quad (x,t) \in [0, 4]\times [0,T], $$
 
@@ -1289,9 +1289,9 @@ Again PINNS returns a very good approxiamte in this case.
 $$\frac{dy}{dx} =\cos(\omega x), \quad x\in [-\pi , \pi],$$
 with $y(0)=0$.
 
-The exact solution is $y(x)=\frac{1}{\omega}\sin(\omega x)$.
+The exact solution is $$y(x)=\frac{1}{\omega}\sin(\omega x)$$.
 
-* Use the following function to generate data points and learn the paramater $\omega^*=2$.
+* Use the following function to generate data points and learn the paramater $$\omega^*=2$$.
 
 
 ```python
@@ -1443,7 +1443,7 @@ The exact solution is
 
 $$w(x,t)=x^2 +2\lambda t+1.$$
 
-* Use the following function to generate data points and learn the paramater $\lambda^*=0.5$.
+* Use the following function to generate data points and learn the paramater $$\lambda^*=0.5$$.
 
 
 ```python
@@ -1888,7 +1888,7 @@ plt.show()
 
 ### Helmholtz equation
 
-We want to determine $\lambda$ for which 
+We want to determine $$\lambda$$ for which 
 
 $$\nabla^2 E(x,y) + \lambda E(x,y) = 0,\qquad x,y \in \Omega =[-2, 2]^2,$$
 
@@ -2061,7 +2061,7 @@ plt.show()
 
 ### Hamilton-Jacobi equation
 
-The goal is to see whether it is possible to learn $a$ and $b$ from data in the following equation 
+The goal is to see whether it is possible to learn $$a$$ and $$b$$ from data in the following equation 
 
 $$
 \begin{array}{l}a \varphi_t+b\sin(x)\varphi_x = 0, \;  x\in[-\pi, \pi], \; t\in[0, 1], \\ \varphi(x, 0) = \sin(x), \\ \varphi(-\pi, t) = \varphi(\pi, t)= 0.  \end{array} 
@@ -2073,7 +2073,7 @@ $$
 \varphi(x,t) = \sin\left(2\arctan\left(e^{-t}\tan\left(\frac{x}{2} \right)\right)\right)
 $$
 
-1. Try learning $a$ and $b$ from data using the function above.
+1. Try learning $$a$$ and $$b$$ from data using the function above.
 2. Can you explain the issue?
 
 
@@ -2277,15 +2277,15 @@ In this example we will need to find the eigenstates of the Schrödinger equatio
 
 $$-\frac{\hbar^2}{2m}\frac{d^2 \psi}{dx^2} + \frac{1}{2}mx^2\omega^2 \psi = E\psi. $$
 
-The eigenvalue $E_n = \omega (n + 1/2)$ has the normalized eigenstate
+The eigenvalue $$E_n = \omega (n + 1/2)$$ has the normalized eigenstate
 
 $$
 \psi_n(x) = \frac{\omega^{1/4}}{\pi^{1/4} \sqrt{2^n n!}}  H_n\left(\sqrt{\omega} x\right)e^{-\frac{\omega x^2}{2}}.
 $$
 
-We will take $\hbar = m=1$. The initial condition is $(\psi(0), \psi'(0)) =(1,0)$ is $n$ is even and $(0,1)$ if $n$ is odd.
+We will take $$\hbar = m=1$$. The initial condition is $$(\psi(0), \psi'(0)) =(1,0)$$ is $$n$$ is even and $$(0,1)$$ if $$n$$ is odd.
 
-* Learn $E$ from data using the function below. 
+* Learn $$E$$ from data using the function below. 
 
 
 ```python
@@ -2450,11 +2450,11 @@ plt.show()
 
 $$\frac{dy}{dx} =\cos(\omega x), \quad x\in [-\pi , \pi],$$
 
-with $y(0)=0$.
+with $$y(0)=0$$.
 
-The exact solution is $y(x)=\frac{1}{\omega}\sin(\omega x)$.
+The exact solution is $$y(x)=\frac{1}{\omega}\sin(\omega x)$$.
 
-* Use the following function to generate data points and learn the paramater $\omega^*=2$. Try with different levels of noise. Use the parameter `eps` to set the amplitude of the noise.
+* Use the following function to generate data points and learn the paramater $$\omega^*=2$$. Try with different levels of noise. Use the parameter `eps` to set the amplitude of the noise.
 
 
 ```python
@@ -2836,7 +2836,7 @@ plt.legend()
     
 
 
-From the graph above for different values of $\omega_0$, the value of $\omega$ found by PINNS diverges from the true value $\omega_0$. 
+From the graph above for different values of $$\omega_0$$, the value of $$\omega$$ found by PINNS diverges from the true value $$\omega_0$$. 
 
 ### Heat equation
 
@@ -2854,7 +2854,7 @@ The exact solution is
 
 $$w(x,t)=x^2 +2\lambda t+1.$$
 
-* Use the following function to generate data points and learn the paramater $\lambda^*=0.5$.
+* Use the following function to generate data points and learn the paramater $$\lambda^*=0.5$$.
 
 * Try with different `eps`.
 
@@ -3027,7 +3027,7 @@ plt.show()
     
 
 
-As the value of the noise amplitude increases, the value of $\lambda$ learned by PINNS diverges from the expected value.
+As the value of the noise amplitude increases, the value of $$\lambda$$ learned by PINNS diverges from the expected value.
 
 ### A system of linear PDEs
 
@@ -3074,7 +3074,7 @@ w(x,t)= \left(x^2 + t + 1\right)\left(e^{- t}-  e^{-2t}\right).
 \end{array}
 $$
 
-* Use noisy data to learn $\alpha, \beta, \gamma$ and $ \delta$. Try with different values of `eps`.
+* Use noisy data to learn $$\alpha, \beta, \gamma$$ and $$\delta$$. Try with different values of `eps`.
 
 
 ```python
@@ -3386,15 +3386,15 @@ In this example you will need to find the eigenstates of the Schrödinger equati
 
 $$-\frac{\hbar^2}{2m}\frac{d^2 \psi}{dx^2} + \frac{1}{2}mx^2\omega^2 \psi = E\psi. $$
 
-The eigenvalue $E_n = \omega (n + 1/2)$ has the normalized eigenstate
+The eigenvalue $$E_n = \omega (n + 1/2)$$ has the normalized eigenstate
 
 $$
 \psi_n(x) = \frac{\omega^{1/4}}{\pi^{1/4} \sqrt{2^n n!}}  H_n\left(\sqrt{\omega} x\right)e^{-\frac{\omega x^2}{2}}.
 $$
 
-We will take $\hbar = m=1$. The initial condition is $(\psi(0), \psi'(0)) =(1,0)$ is $n$ is even and $(0,1)$ if $n$ is odd.
+We will take $$\hbar = m=1$$. The initial condition is $$(\psi(0), \psi'(0)) =(1,0)$$ is $$n$$ is even and $$(0,1)$$ if $$n$$ is odd.
 
-* Learn $E$ from data. Try with different values of `num_pts` and `eps`.
+* Learn $$E$$ from data. Try with different values of `num_pts` and `eps`.
 
 
 ```python
@@ -3866,9 +3866,9 @@ for i in range(3):
     
 
 
-In the follwoing we plot the results for $n=2$ and $n=5$. Number of observations are [100,150,200], and value for noise amplitudes are [0.1, 0.3, 0.5, 0.7]
+In the follwoing we plot the results for $$n=2$$ and $$n=5$$. Number of observations are [100,150,200], and value for noise amplitudes are [0.1, 0.3, 0.5, 0.7]
 
-For $n=5$ the values of E learned by the NN are less sensitive to noise amplitudes, but hteir value is very different with the expected value of $E^*$.
+For $$n=5$$ the values of E learned by the NN are less sensitive to noise amplitudes, but hteir value is very different with the expected value of $$E^*$$.
 
 
 ```python
