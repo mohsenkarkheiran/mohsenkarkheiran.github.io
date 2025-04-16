@@ -48,7 +48,7 @@ PINNs stand for Physics Informed Neural Networks, and it is used to solve system
 
 
 * Circles: Initial/Boundary conditions; Stars: equations; Squares: Data (if available)
-* Suppose the equation is given by $'\mathcal{N}(u) =0'$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
+* Suppose the equation is given by $$\mathcal{N}(u) =0$$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
   
 $$
 \mathcal{N}(u) = u_t + u u_x - \nu u_{xx} =0
@@ -58,32 +58,34 @@ $$
 
 $$
 \begin{eqnarray}
-L[\mathbf{w}]  = \mbox{Error in Equations}+ \\
-\mbox{Error in Initial conditions} \\
-+\mbox{Error in Boundary conditions} \\
-+\mbox{Error in Fitting Data}
+L[\mathbf{w}]  &=& \mbox{Error in Equations}\\
+&+&\mbox{Error in Initial conditions} \\
+&+&\mbox{Error in Boundary conditions} \\
+&+&\mbox{Error in Fitting Data}
 \end{eqnarray}
 $$
 
 * In terms of equations, the Loss function is defined as, for example, the total square error (or the mean square error, or mean absolute error, or ...)
   
 $$
-L[\mathbf{w}]  =
+\begin{eqnarray}
+L[\mathbf{w}]  &=&
 \frac{1}{2}
 \sum_{(x_{\rm int},t_{\rm int})}
 \alpha_{\rm eq}
 \left\| \mathcal{N}[ u_\mathbf{w}] (x_{\rm int},t_{\rm int}) \right\|^2
 \\
-+
+&+&
 \frac{1}{2} \sum_{(x_{\rm bnd},t_{\rm bnd})} \alpha_{\rm bnd} \left\|  u_b (x_{\rm bnd},t_{\rm bnd}) -u_\mathbf{w} (x_{\rm bnd},t_{\rm bnd} )\right\|^2
 \\
- +
+&+&
 \frac{1}{2} \sum_{(x_{\rm init},t_{\rm init})} \alpha_{\rm init}
 \left\|  u_b (x_{\rm init},t_{\rm init}) -u_\mathbf{w} (x_{\rm init},t_{\rm init}) \right\|^2
 \\
-+
+&+&
 \frac{1}{2} \sum_{(x_{\rm init},t_{\rm init})} \alpha_{\rm data}
 \left\|  u_{\rm data} (x_{\rm data},t_{\rm data}) -u_\mathbf{w} (x_{\rm data},t_{\rm data}) \right\|^2
+\end{eqnarray}
 $$
 
 * Find the weights $\mathbf{w}$ minimizing $L$:  $\mathbf{w} = {\rm arg min} L[\mathbf{w}]$  
