@@ -41,11 +41,11 @@ PINNs stand for Physics Informed Neural Networks, and it is used to solve system
 
 
 * Circles: Initial/Boundary conditions; Stars: equations; Squares: Data (if available)
-* Suppose the equation is given by $' \mathcal{N}(u) =0 '$  where $' \mathcal{N}(u) '$ defines the equation, for example, for Burgers equation
+* Suppose the equation is given by $\mathcal{N}(u) =0$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
   
-'''math
+$$
 \mathcal{N}(u) = u_t + u u_x - \nu u_{xx} =0
-'''
+$$
 
 * Take the loss function for a given set of weights $\mathbf{w}$  to be
 
