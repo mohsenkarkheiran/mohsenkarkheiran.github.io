@@ -4,6 +4,9 @@ title: Solving Differential Equations with PINNs
 image: "/posts/pinns_visualization.png"
 tags: [Deep Learning,PINNs, DeepXDE, Python]
 ---
+<script type="text/javascript" async
+     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 # Table of Contents
 - [ 1 - Introduction](#1)
