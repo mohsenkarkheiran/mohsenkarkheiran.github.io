@@ -5,6 +5,11 @@ image: "/posts/pinns_visualization.png"
 tags: [Deep Learning,PINNs, DeepXDE, Python]
 ---
 
+<script type="text/javascript" async
+     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
 # Table of Contents
 - [ 1 - Introduction](#1)
 - [ 2 - Solve Differential Equations with PINNs](#2)
@@ -26,6 +31,8 @@ tags: [Deep Learning,PINNs, DeepXDE, Python]
   - [ 4.2 - Heat Equation](#4.2)
   - [ 4.3 - Linear System of PDEs](#4.3)
   - [ 4.6 - Schrodinger Equation](#4.4)
+
+
 
 <a name='1'></a>
 ## Introduction:
