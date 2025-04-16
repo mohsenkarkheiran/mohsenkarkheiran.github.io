@@ -1,12 +1,13 @@
+<script type="text/javascript" async
+     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 ---
 layout: post
 title: Solving Differential Equations with PINNs
 image: "/posts/pinns_visualization.png"
 tags: [Deep Learning,PINNs, DeepXDE, Python]
 ---
-<script type="text/javascript" async
-     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
 
 # Table of Contents
 - [ 1 - Introduction](#1)
@@ -44,7 +45,7 @@ PINNs stand for Physics Informed Neural Networks, and it is used to solve system
 
 
 * Circles: Initial/Boundary conditions; Stars: equations; Squares: Data (if available)
-* Suppose the equation is given by $\mathcal{N}(u) =0$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
+* Suppose the equation is given by $'\mathcal{N}(u) =0'$  where $\mathcal{N}(u)$ defines the equation, for example, for Burgers equation
   
 $$
 \mathcal{N}(u) = u_t + u u_x - \nu u_{xx} =0
@@ -53,10 +54,12 @@ $$
 * Take the loss function for a given set of weights $\mathbf{w}$  to be
 
 $$
+\begin{eqnarray}
 L[\mathbf{w}]  = \mbox{Error in Equations}+ \\
 \mbox{Error in Initial conditions} \\
 +\mbox{Error in Boundary conditions} \\
 +\mbox{Error in Fitting Data}
+\end{eqnarray}
 $$
 
 * In terms of equations, the Loss function is defined as, for example, the total square error (or the mean square error, or mean absolute error, or ...)
